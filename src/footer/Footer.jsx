@@ -7,7 +7,10 @@ import {
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-around bg-stone-950 py-4">
+    <footer
+      className="bottom-0 flex w-full shrink-0 flex-col 
+    items-center justify-around bg-stone-950 py-4 mt-3"
+    >
       <div className="mb-3 flex gap-3">
         <FontAwesomeIcon
           icon={faInstagram}
@@ -16,7 +19,7 @@ function Footer() {
         />
         <FontAwesomeIcon
           icon={faXTwitter}
-          className="cursor-pointer mx-3 text-3xl text-slate-200 transition-transform 
+          className="mx-3 cursor-pointer text-3xl text-slate-200 transition-transform 
           duration-100 hover:scale-95"
         />
         <FontAwesomeIcon

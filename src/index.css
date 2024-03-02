@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+canvas {
+  height: 300px !important;
+  /* border: 1px solid white; */
+  /* border-radius: 50%; */
+}
+
 .voltage-button {
   position: relative;
 }

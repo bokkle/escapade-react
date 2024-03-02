@@ -2,13 +2,15 @@ import Footer from './footer/Footer';
 import NavBar from './nav/NavBar';
 import Tickets from './tickets/Tickets';
 import Hero from './hero/Hero';
+import Lineup from './lineup/Lineup';
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col justify-between">
+    <div className="relative flex min-h-screen flex-col justify-between">
       <NavBar />
-      <Hero />
-      <Tickets />
+      {/* <Hero /> */}
+      <Lineup />
+      {/* <Tickets /> */}
       <Footer />
     </div>
   );

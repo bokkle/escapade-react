@@ -14,13 +14,13 @@ function Lineup() {
       >
         <p className="border-b-2 border-violet-300">in alphabetical order</p>
         <p className="px-4 text-center text-xl tracking-wide sm:text-2xl">
-          {djs.map((dj, i) => `• ${dj} `)} <span>•</span>
+          {djs.map((dj, i) => `• ${dj} `)}
         </p>
         <p className="mt-3 border-b-2 border-violet-300">stage host</p>
         <p className="mb-3 text-xl sm:text-2xl">shaq's bass all stars</p>
         <p className="border-b-2 border-violet-300">festival support artists</p>
         <p className="px-4 text-center text-lg tracking-wide sm:text-xl">
-          {supportDjs.map((dj) => `• ${dj} `)} <span>•</span>
+          {supportDjs.map((dj) => `• ${dj} `)}
         </p>
       </div>
     </div>

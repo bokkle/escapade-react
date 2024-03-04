@@ -4,6 +4,10 @@ import Tickets from './tickets/Tickets';
 import Hero from './hero/Hero';
 import Lineup from './lineup/Lineup';
 import Faq from './faq/Faq';
+import Contact from './contact/Contact';
+import Loader from './ui/Spinner';
+// import { Loader } from '@react-three/drei';
+
 
 function App() {
   return (
@@ -12,7 +16,9 @@ function App() {
       {/* <Hero /> */}
       {/* <Lineup /> */}
       {/* <Tickets /> */}
-      <Faq />
+      {/* <Faq /> */}
+      <Contact />
+      {/* <Loader /> */}
       <Footer />
     </div>
   );

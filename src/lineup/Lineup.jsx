@@ -3,7 +3,7 @@ import VoltageButton from '../ui/VoltageButton';
 
 function Lineup() {
   return (
-    <div className="flex h-screen flex-1 flex-col items-center drop-shadow-lg">
+    <div className="flex flex-1 flex-col items-center drop-shadow-lg">
       <h1 className="mb-5 text-2xl uppercase tracking-wide text-cyan-300">
         tickets on sale <span className="text-purple-400">now</span>
       </h1>

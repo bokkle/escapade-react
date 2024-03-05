@@ -4,7 +4,7 @@ function Tickets() {
   const admission = ['general', 'vip'];
 
   return (
-    <div className="">
+    <div className="flex-1">
       <h1 className="mb-4 text-center text-3xl uppercase text-teal-300">
         Tickets
       </h1>

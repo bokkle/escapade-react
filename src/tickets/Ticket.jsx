@@ -8,7 +8,7 @@ function Ticket({ children }) {
   bg-gradient-to-br from-indigo-500 via-cyan-300 to-pink-300 p-2"
     >
       <div
-        className="flex h-full flex-col items-center justify-between rounded-xl 
+        className="flex h-full flex-col items-center justify-between rounded-lg 
       bg-slate-900 p-8"
       >
         <div

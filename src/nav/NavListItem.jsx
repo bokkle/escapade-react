@@ -1,15 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavListItem({ children }) {
   return (
-    <Link to={`${children.replaceAll(' ', '')}`}>
+    <NavLink
+      to={`${children.replaceAll(' ', '')}`}
+      className={({ isActive }) =>
+        isActive ? 'text-teal-200' : 'text-teal-400'
+      }
+    >
       <li
-        className="cursor-pointer  text-lg font-semibold uppercase text-teal-400
+        className="cursor-pointer  text-lg font-semibold uppercase 
       transition-all duration-100 hover:text-teal-200 active:scale-95"
       >
         {children}
       </li>
-    </Link>
+    </NavLink>
   );
 }
 

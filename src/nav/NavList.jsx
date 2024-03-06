@@ -1,7 +1,7 @@
 import NavListItem from './NavListItem';
 
 function NavList() {
-  const navItems = ['line up', 'tickets', 'faq', 'contact', 'cart'];
+  const navItems = ['line up', 'tickets', 'faq', 'contact'];
   return (
     <ul className="hidden space-x-8 md:flex">
       {navItems.map((el, i) => (

@@ -42,7 +42,7 @@ function Contact() {
     }, 2000);
   };
   return (
-    <div className="flex flex-1 items-center justify-center">
+    <div className="flex flex-1 flex-col items-center justify-center">
       <div
         className="h-[500px] min-h-[454px] w-full max-w-3xl rounded-xl bg-gradient-to-br 
       from-indigo-500 via-cyan-300 to-pink-300 p-1"
@@ -51,7 +51,7 @@ function Contact() {
           {!isLoading && !thankYou && (
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="mb-5 text-5xl text-indigo-500"
+              className="mb-5 text-5xl text-pink-300"
             />
           )}
           {/* {isLoading && !thankYou ? (

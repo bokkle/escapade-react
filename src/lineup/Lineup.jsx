@@ -4,10 +4,10 @@ import VoltageButton from '../ui/VoltageButton';
 function Lineup() {
   return (
     <div className="flex flex-1 flex-col items-center drop-shadow-lg">
-      <h1 className="mb-5 text-2xl uppercase tracking-wide text-cyan-300">
-        tickets on sale <span className="text-purple-400">now</span>
+      <h1 className="text-3xl font-bold uppercase tracking-wide text-pink-300">
+        line up
       </h1>
-      <VoltageButton>get tickets</VoltageButton>
+
       <div
         className="mx-auto my-8 flex max-w-2xl flex-col items-center justify-center 
         uppercase text-cyan-100"
@@ -22,6 +22,12 @@ function Lineup() {
         <p className="px-4 text-center text-lg tracking-wide sm:text-xl">
           {supportDjs.map((dj) => `• ${dj} `)}
         </p>
+      </div>
+      <div className='flex flex-col items-center mb-5'>
+        <h1 className="mb-5 text-2xl uppercase tracking-wide text-cyan-300">
+          tickets on sale <span className="text-purple-400">now</span>
+        </h1>
+        <VoltageButton>get tickets</VoltageButton>
       </div>
     </div>
   );

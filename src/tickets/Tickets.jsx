@@ -5,7 +5,7 @@ function Tickets() {
 
   return (
     <div className="flex-1">
-      <h1 className="mb-4 text-center text-3xl uppercase text-teal-300">
+      <h1 className="mb-4 text-center text-3xl uppercase text-pink-300 font-bold tracking-wide">
         Tickets
       </h1>
       <div

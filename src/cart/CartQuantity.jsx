@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSquareMinus,
@@ -6,21 +5,7 @@ import {
   faTicket,
 } from '@fortawesome/free-solid-svg-icons';
 
-function CartQuantity() {
-  const [numTickets, setNumTickets] = useState(0);
-
-  console.log(numTickets);
-
-  const handleInc = () => {
-    if (numTickets === 6) return;
-    setNumTickets((num) => num + 1);
-  };
-
-  const handleDec = () => {
-    if (numTickets === 0) return;
-    setNumTickets((num) => num - 1);
-  };
-
+function CartQuantity({ onHandleInc, onHandleDec, numTickets }) {
   return (
     <div className="my-6 flex flex-row rounded border border-teal-400 bg-slate-800">
       <div className="flex flex-1 items-center justify-center space-x-2 border py-4">
@@ -38,15 +23,15 @@ function CartQuantity() {
           <FontAwesomeIcon
             icon={faSquareMinus}
             className={`cursor-pointer text-2xl 
-            ${numTickets === 0 ? 'text-slate-500' : 'text-indigo-400'}`}
-            onClick={handleDec}
+            ${numTickets === 1 ? 'text-slate-500' : 'text-indigo-400'}`}
+            onClick={() => onHandleDec()}
           />
           <span className="text-xl font-bold text-slate-200">{numTickets}</span>
           <FontAwesomeIcon
             icon={faSquarePlus}
             className={`cursor-pointer text-2xl 
             ${numTickets === 6 ? 'text-slate-500' : 'text-indigo-400'}`}
-            onClick={handleInc}
+            onClick={() => onHandleInc()}
           />
         </div>
       </div>

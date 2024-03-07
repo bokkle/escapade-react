@@ -17,9 +17,9 @@ function Faq() {
   };
 
   return (
-    <div className="flex flex-1 justify-center p-5">
-      <div className="flex w-full flex-col items-center justify-start gap-2.5">
-        <h1 className="text-center capitalize">frequently asked questions</h1>
+    <div className="flex flex-1 justify-center px-5">
+      <div className="flex w-full flex-col items-center justify-start gap-2.5 mb-5">
+        <h1 className="text-center uppercase text-pink-300 font-bold text-3xl">faq</h1>
 
         <FaqSelect faqSection={faqSection} onHandleSetFaq={handleSetFaq} />
 

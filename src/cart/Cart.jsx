@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CartContent from './CartContent';
 
 function Cart() {
   return (
-    <div className="flex flex-1 justify-center">
+    <div className="flex justify-center">
       <div
         className="max-w-3xl flex-1 rounded-xl bg-gradient-to-br from-indigo-500
     via-cyan-300 to-pink-300 p-2"

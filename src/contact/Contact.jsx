@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from './ContactForm';
 import Spinner from '../ui/Spinner';
 import ThankYou from './ThankYou';
-// :) :)
+// :) :) :)
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(false);

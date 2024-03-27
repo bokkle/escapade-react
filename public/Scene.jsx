@@ -10,13 +10,23 @@ Title: Crystal Moon Stick
 
 import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/scene.gltf');
+  const modelRef = useRef();
+
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.003;
+    }
+  });
+
   return (
     <group {...props} dispose={null}>
       <group rotation={[0, -Math.PI / 2, 0]}>
         <mesh
+          ref={modelRef}
           geometry={nodes.Luna_blinn4_0.geometry}
           material={materials.blinn4}
           position={[0, -10.8, 0]}

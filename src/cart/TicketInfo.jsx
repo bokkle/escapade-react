@@ -10,7 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function TicketInfo() {
   return (
     <div className="space-y-2">
-      <h1 className="capitalize text-purple-300 font-semibold tracking-wide">weekend general admission</h1>
+      <h1 className="font-semibold capitalize tracking-wide text-purple-300">
+        weekend general admission
+      </h1>
       <div className="flex space-x-2">
         <div className="flex w-min flex-col justify-center space-y-2">
           <FontAwesomeIcon

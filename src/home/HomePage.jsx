@@ -4,6 +4,8 @@ import HeroTitle from './HeroTitle';
 import VoltageButton from '../ui/VoltageButton';
 import TicketInfo from '../cart/TicketInfo';
 
+// :)
+
 function HomePage() {
   return (
     <div className="flex flex-1 flex-col items-center justify-between">

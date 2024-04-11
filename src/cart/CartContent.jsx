@@ -4,7 +4,7 @@ import CartQuantity from './CartQuantity';
 import TicketInfo from './TicketInfo';
 import CartButtons from './CartButtons';
 
-// ;)
+// ;) :)
 
 function CartContent() {
   const [numTickets, setNumTickets] = useState(1);

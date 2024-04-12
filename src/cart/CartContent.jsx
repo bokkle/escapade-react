@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import CartPrice from './CartPrice';
 import CartQuantity from './CartQuantity';
 import TicketInfo from './TicketInfo';
 import CartButtons from './CartButtons';
-
-// ;) :)
 
 function CartContent() {
   const [numTickets, setNumTickets] = useState(1);

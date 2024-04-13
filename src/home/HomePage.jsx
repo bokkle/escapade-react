@@ -3,6 +3,7 @@ import HeroModel from './HeroModel';
 import HeroTitle from './HeroTitle';
 // import TicketInfo from '../cart/TicketInfo';
 import About from './About';
+// :)
 
 function HomePage() {
   return (
